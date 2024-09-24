@@ -17,7 +17,7 @@ overall system reliability and performance.
 - The architecture of Prometheus is designed to be highly flexible, scalable, and modular.
 - It consists of several core components, each responsible for a specific aspect of the monitoring process.
 
-![Prometheus Architecture](https://github.com/balusena/observability-monitoring-for-devops/blob/main/02-Monitoring%20Tools%20Introduction%20and%20Setup/prometheus-architecture.gif)
+![Prometheus Architecture](https://github.com/balusena/observability-monitoring-for-devops/blob/main/02-Introduction%20to%20Monitoring%20Tools/prometheus-architecture.gif)
 
 ### 🔥 Prometheus Server
 - Prometheus server is the core of the monitoring system. It is responsible for scraping metrics from various configured targets, storing them in its time-series database (TSDB), and serving queries through its HTTP API.
@@ -67,6 +67,6 @@ overall system reliability and performance.
 
 ### 🔌 API Clients
 - API clients interact with Prometheus through its HTTP API to fetch data, query metrics, and integrate Prometheus with other systems or custom applications.
-
+vbgjh
 
 
