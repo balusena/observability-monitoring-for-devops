@@ -20,8 +20,8 @@ targets, store them, and allow for powerful queries and alerting.
 - 3.Prometheus system user and group.
 - 4.Sufficient storage on your system and good internet connectivity.
 - 5.Ports Required:
-                 - 9090 ---> Prometheus
-                 - 3000 ---> Grafana
-                 - 9100 ---> Node Exporter
+                 - **9090 ---> Prometheus**
+                 - **3000 ---> Grafana**
+                 - **9100 ---> Node Exporter**
 
 
