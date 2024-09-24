@@ -1,2 +1,0 @@
-# Grafanna Installation and Setup
-
