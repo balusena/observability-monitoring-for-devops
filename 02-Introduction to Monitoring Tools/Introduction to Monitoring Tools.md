@@ -1,4 +1,4 @@
-# Monitoring Tools Introduction and Setup
+# Introduction to Monitoring Tools
 
 ## Monitoring Tools Overview
 Monitoring tools are essential for maintaining the health, performance, and availability of systems and applications. 
