@@ -10,6 +10,14 @@
     - **What are the Tools Available?**
     
 2. **Introduction to Monitoring Tools**
-    - 
-    
+    - **Monitoring Tools Overview**
+       - **Prometheus**
+          - **Prometheus Architecture**
+          - **Prometheus Server**
+          - **Service Discovery**
+          - **Pushgateway**
+          - **Alert Manager**
+          - **Exporters**
+          - **Prometheus Web UI**
+         
 
