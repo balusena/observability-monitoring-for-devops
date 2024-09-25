@@ -122,10 +122,15 @@ caching mechanisms to optimize performance. This approach helps reduce downtime 
 utilization and maintaining optimal system performance.
 
 ### Project Approach Using New Relic:
+
+![New Relic](https://github.com/balusena/observability-monitoring-for-devops/blob/main/08-Observability%20Monitoring%20AWS%20DevOps%20Project/newrelic.png)
+
 In our DevOps project, the Shipping API service has been experiencing extended load times and integration challenges with 
 other components. To investigate further, we utilize New Relic’s APM tool to analyze the root cause of latency issues 
 specific to the Shipping API. While default logs provide basic insights for all microservices, the Shipping service, which
 is built with both Java and Node.js, requires deeper monitoring through New Relic for more comprehensive metric analysis.
+
+![New Relic Shipping](https://github.com/balusena/observability-monitoring-for-devops/blob/main/08-Observability%20Monitoring%20AWS%20DevOps%20Project/newrelic-shipping.png)
 
 **Note**: Our investigation identified that delays in loading the **cities** schema in MySQL are contributing to the
 performance issues. Addressing these inefficiencies is crucial for improving the speed and responsiveness of the Shipping 
