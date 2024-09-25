@@ -48,6 +48,7 @@ monitor the shipping application, which is built on Java.
 ### Project Approach Using ELK Stack for Log Collection and Management:
 
 ![ELK Stack for Log Collection and Management](https://github.com/balusena/observability-monitoring-for-devops/blob/main/08-Observability%20Monitoring%20AWS%20DevOps%20Project/elk-stack-log-collection.png)
+
 In our DevOps project, we integrate the ELK stack to optimize log collection and management. Logs from services like 
 Payment, Frontend, and Shipping are processed through Logstash for structured formatting, while logs from Cart, Catalogue,
 and User are directly indexed in Elasticsearch. This ensures efficient data organization, real-time monitoring, and detailed
