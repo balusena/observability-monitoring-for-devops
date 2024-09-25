@@ -68,5 +68,10 @@ overall system reliability and performance.
 ### 🔌 API Clients
 - API clients interact with Prometheus through its HTTP API to fetch data, query metrics, and integrate Prometheus with other systems or custom applications.
 
+### 🖥️ Prometheus and Grafana Together
+Prometheus and Grafana are often used together to provide a complete monitoring solution. Prometheus collects and stores the metrics, while Grafana visualizes them in real-time.
+
+- Prometheus handles data collection, storage, and basic alerting.
+- Grafana connects to Prometheus as a data source to create rich dashboards and provides advanced alerting and notification capabilities.
 
 
