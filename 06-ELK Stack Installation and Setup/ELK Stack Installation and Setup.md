@@ -143,7 +143,61 @@ ubuntu@balasenapathi:~$ sudo systemctl restart elasticsearch
 ubuntu@balasenapathi:~$ sudo systemctl restart kibana
 ```
 
+### 7. Install Beats 
+- **Filebeat**
 
+Filebeat is a lightweight, open-source log shipper designed for forwarding and centralizing log data. It is part of the 
+Elastic Stack and operates on the edge of your infrastructure, collecting logs from various sources such as servers and 
+applications. Filebeat efficiently sends this log data to either Logstash for further processing or directly to Elasticsearch
+for indexing and storage. It features modules for common log formats, simplifying the setup process. By using Filebeat, 
+organizations can ensure timely and reliable log collection, enabling real-time analysis and visualization through the 
+ELK stack, which enhances overall observability and operational intelligence.
+
+- **1. Install Filebeat.**
+```
+ubuntu@balasenapathi:~$ sudo apt install filebeat
+```
+
+- **2.Enable and configure the Filebeat Elasticsearch module.**
+```
+ubuntu@balasenapathi:~$ sudo filebeat modules enable elasticsearch
+ubuntu@balasenapathi:~$ sudo filebeat setup
+```
+
+- **3.Start Filebeat.**
+```
+ubuntu@balasenapathi:~$ sudo systemctl start filebeat
+
+ubuntu@balasenapathi:~$ sudo systemctl enable filebeat
+```
+
+### 8. Verify Installation
+
+- **1. Check that Elasticsearch, Kibana, and Logstash are running.**
+```
+ubuntu@balasenapathi:~$ sudo systemctl status elasticsearch
+
+ubuntu@balasenapathi:~$ sudo systemctl status kibana
+
+ubuntu@balasenapathi:~$ sudo systemctl status logstash
+```
+
+### 9. Access Kibana
+Navigate to http://localhost:5601 or your server’s IP in your browser. This will open the Kibana dashboard where you can
+explore your logs, create visualizations, and set up dashboards.
+```
+http://localhost:5601
+```
+## Summary
+By following this step-by-step guide, you should now have the ELK stack (Elasticsearch, Logstash, and Kibana) installed 
+and running on your Ubuntu system. This powerful suite allows for efficient centralized logging and data visualization,
+making it easier to monitor and analyze your logs in real time.
+          
+In addition, Filebeat has also been integrated into your setup. Filebeat is a lightweight log shipper that is responsible
+for forwarding and centralizing log data. It can efficiently send logs from various sources to Logstash or directly to 
+Elasticsearch, ensuring that your log data is collected and processed seamlessly. Together, the ELK stack and Filebeat 
+provide a comprehensive solution for managing and analyzing your log data, enhancing your operational insights and 
+facilitating better decision-making.
 
 
 
