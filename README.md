@@ -36,5 +36,18 @@
           - **Move into the Extracted Directory**
           - **Start Prometheus**
           - **Create the systemd Unit File**
-                    
+          
+4. **Grafana Installation and Setup**
+    - **Grafana**
+    - **Key Features**
+    - **Grafana installation and setup in Ubuntu Linux** 
+       - **Prerequisites**
+       - **Grafana installation steps**  
+          - **Add the Grafana repository**
+          - **Next,add the Grafana repository to your APT sources**
+          - **Update the package index/Refresh your APT cache to update your package lists**
+          - **Install Grafana**
+          - **Start the Grafana service**
+          - **Verify Status, Enable and Start the Grafana service to start on boot**
+          - **Grafana Login Credentials**               
 
