@@ -110,6 +110,9 @@ reliability, and operational efficiency. This automation simplifies management a
 enabling timely issue detection and response.
 
 ### Project Approach Using Grafana:
+
+![Grafana](https://github.com/balusena/observability-monitoring-for-devops/blob/main/08-Observability%20Monitoring%20AWS%20DevOps%20Project/grafana.png)
+
 In our Grafana dashboard, we display the status (UP/DOWN) of component API servers in both dev and prod environments, along
 with CPU and memory utilization percentages. These metrics address the **saturation** signal from the Four Golden Signals.
 
