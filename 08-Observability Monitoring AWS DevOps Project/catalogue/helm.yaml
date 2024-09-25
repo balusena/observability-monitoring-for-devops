@@ -1,0 +1,22 @@
+image:
+  repository: 828448425071.dkr.ecr.us-east-1.amazonaws.com/catalogue
+port: 8080
+component: catalogue
+
+serviceAccount:
+  create: true
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::828448425071:role/eks-prod-ssm-pm-role
+
+PARAMETERS: "DOCUMENTDB,roboshop.prod.catalogue.mongo MONGO_URL,roboshop.prod.catalogue.mongo_url DOCDB_ENDPOINT,roboshop.prod.catalogue.docdb_endpoint DOCDB_USERNAME,roboshop.prod.docdb.username DOCDB_PASSWORD,roboshop.prod.docdb.password COMPONENT,catalogue SCHEMA_TYPE,mongo"
+
+schemaInitContainer:
+  enabled: true
+
+resources:
+  limits:
+    cpu: 350m
+    memory: 712Mi
+  requests:
+    cpu: 250m
+    memory: 512Mi

@@ -1,0 +1,23 @@
+image:
+  repository: 828448425071.dkr.ecr.us-east-1.amazonaws.com/user
+
+port: 8080
+component: user
+
+serviceAccount:
+  create: true
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::828448425071:role/eks-prod-ssm-pm-role
+
+PARAMETERS: "DOCUMENTDB,roboshop.prod.user.mongo REDIS_HOST,roboshop.prod.user.redis_host MONGO_URL,roboshop.prod.user.mongo_url DOCDB_ENDPOINT,roboshop.prod.user.docdb_endpoint DOCDB_USERNAME,roboshop.prod.docdb.username DOCDB_PASSWORD,roboshop.prod.docdb.password COMPONENT,user SCHEMA_TYPE,mongo"
+
+schemaInitContainer:
+  enabled: true
+
+resources:
+  limits:
+    cpu: 350m
+    memory: 712Mi
+  requests:
+    cpu: 250m
+    memory: 512Mi

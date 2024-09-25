@@ -1,0 +1,35 @@
+image:
+  repository: 828448425071.dkr.ecr.us-east-1.amazonaws.com/frontend
+
+port: 80
+component: frontend
+
+ingress:
+  enabled: true
+  className: "nginx"
+  annotations: {}
+  hosts:
+    - host: www.robobal.store
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+          component: frontend
+          port: 80
+  tls: []
+
+serviceAccount:
+  create: true
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::828448425071:role/eks-prod-ssm-pm-role
+
+PARAMETERS: "CATALOGUE_URL,roboshop.prod.frontend.catalogue_url"
+
+resources:
+  limits:
+    cpu: 500m
+    memory: 512Mi
+  requests:
+    cpu: 500m
+    memory: 512Mi
+
+

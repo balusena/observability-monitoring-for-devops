@@ -1,0 +1,9 @@
+- name: Load Maven
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: maven
+
+- name: Load Prometheus Node Exporter
+  ansible.builtin.import_role:
+    name: prometheus
+    tasks_from: node-exporter

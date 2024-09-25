@@ -1,0 +1,26 @@
+image:
+  repository: 828448425071.dkr.ecr.us-east-1.amazonaws.com/shipping
+
+port: 8080
+component: shipping
+
+serviceAccount:
+  create: true
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::828448425071:role/eks-prod-ssm-pm-role
+
+PARAMETERS: "CART_ENDPOINT,roboshop.prod.shipping.cart_endpoint DB_HOST,roboshop.prod.shipping.db_host MYSQL_ENDPOINT,roboshop.prod.shipping.db_host MYSQL_USERNAME,roboshop.prod.mysql.username MYSQL_PASSWORD,roboshop.prod.mysql.password COMPONENT,shipping SCHEMA_TYPE,mysql"
+
+schemaInitContainer:
+  enabled: true
+
+resources:
+  limits:
+    cpu: 1800m
+    memory: 2548Mi
+  requests:
+    cpu: 1500m
+    memory: 2048Mi
+
+autoscaling:
+  targetCPUUtilizationPercentage: 30

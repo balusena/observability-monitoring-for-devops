@@ -1,0 +1,10 @@
+controller:
+  service:
+    targetPorts:
+      http: http
+      https: http
+    annotations:
+      service.beta.kubernetes.io/aws-load-balancer-type: nlb
+      service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:us-east-1:828448425071:certificate/df27e7d6-7f97-4528-8e89-79416a13291d
+      service.beta.kubernetes.io/aws-load-balancer-backend-protocol: "tls"
+      service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "https"

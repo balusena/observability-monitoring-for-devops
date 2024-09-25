@@ -1,0 +1,20 @@
+image:
+  repository: 828448425071.dkr.ecr.us-east-1.amazonaws.com/payment
+
+port: 8080
+component: payment
+
+serviceAccount:
+  create: true
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::828448425071:role/eks-prod-ssm-pm-role
+
+PARAMETERS: "CART_HOST,roboshop.prod.payment.cart_host CART_PORT,roboshop.prod.payment.cart_port USER_HOST,roboshop.prod.payment.user_host USER_PORT,roboshop.prod.payment.user_port AMQP_HOST,roboshop.prod.payment.amqp_host AMQP_USER,roboshop.prod.payment.amqp_user AMQP_PASS,roboshop.prod.payment.amqp_pass COMPONENT,payment"
+
+resources:
+  limits:
+    cpu: 900m
+    memory: 1500Mi
+  requests:
+    cpu: 800m
+    memory: 1024Mi

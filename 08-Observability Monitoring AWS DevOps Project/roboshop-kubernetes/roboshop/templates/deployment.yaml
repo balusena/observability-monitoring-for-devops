@@ -1,0 +1,90 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.component }}
+  labels:
+    {{- include "roboshop.labels" . | nindent 4 }}
+spec:
+  {{- if not .Values.autoscaling.enabled }}
+  replicas: {{ .Values.replicaCount }}
+  {{- end }}
+  selector:
+    matchLabels:
+      {{- include "roboshop.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      labels:
+        {{- include "roboshop.selectorLabels" . | nindent 8 }}
+    spec:
+     {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ .Values.component }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      initContainers:
+        - name: aws-params
+          image: 828448425071.dkr.ecr.us-east-1.amazonaws.com/aws-parameter-init-container:latest
+          imagePullPolicy: Always
+          env:
+            - name: PARAMETERS
+              value: {{ .Values.PARAMETERS }}
+          volumeMounts:
+            - mountPath: /data
+              name: param-volume
+      {{- if .Values.schemaInitContainer.enabled }}
+        - name: schema-load
+          image: 828448425071.dkr.ecr.us-east-1.amazonaws.com/schema-load-init-container:latest
+          imagePullPolicy: Always
+          env:
+            - name: PARAMETERS
+              value: {{ .Values.PARAMETERS }}
+          volumeMounts:
+            - mountPath: /data
+              name: param-volume
+      {{- end }}
+      containers:
+        - name: {{ .Values.component }}
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.port }}
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: {{ .Values.port }}
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: {{ .Values.port }}
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+          volumeMounts:
+            - mountPath: /data
+              name: param-volume
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      volumes:
+        - name: param-volume
+          emptyDir:
+            sizeLimit: 500Mi
+
