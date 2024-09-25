@@ -35,5 +35,58 @@ networks.
 
 ## ELK installation and setup in Ubuntu Linux
 
+### 1. Update the System
+First, ensure that your system is updated and the required packages are installed.
+```
+ubuntu@balasenapathi:~$ sudo apt update && sudo apt upgrade
+
+ubuntu@balasenapathi:~$ sudo apt install apt-transport-https curl wget
+```
+
+### 2. Install Java
+ELK Stack requires Java (version 11+). Install OpenJDK using the following command.
+```
+ubuntu@balasenapathi:~$ sudo apt install openjdk-11-jdk
+```
+Verify the installation.
+```
+ubuntu@balasenapathi:~$ java -version
+```
+
+### 3. Install Elasticsearch
+Elasticsearch is the storage and search engine for the ELK stack. Follow these steps to install it.
+
+- Download and install the Elasticsearch public signing key.
+```
+ubuntu@balasenapathi:~$ wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+```
+
+- Add the Elasticsearch repository to the APT sources list
+```
+ubuntu@balasenapathi:~$ sudo sh -c 'echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" > /etc/apt/sources.list.d/elastic-7.x.list'
+```
+
+- Install Elasticsearch.
+```
+ubuntu@balasenapathi:~$ sudo apt update
+
+ubuntu@balasenapathi:~$ sudo apt install elasticsearch
+```
+
+- Enable and start the Elasticsearch service.
+```
+ubuntu@balasenapathi:~$ sudo systemctl enable elasticsearch
+
+ubuntu@balasenapathi:~$ sudo systemctl start elasticsearch
+```
+
+-Verify that Elasticsearch is running.
+```
+ubuntu@balasenapathi:~$ curl -X GET "localhost:9200/"
+```
+
+
+
+
 
 
