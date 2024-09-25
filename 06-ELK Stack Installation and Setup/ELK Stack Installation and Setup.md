@@ -48,7 +48,7 @@ ELK Stack requires Java (version 11+). Install OpenJDK using the following comma
 ```
 ubuntu@balasenapathi:~$ sudo apt install openjdk-11-jdk
 ```
-Verify the installation.
+- Verify the installation.
 ```
 ubuntu@balasenapathi:~$ java -version
 ```
