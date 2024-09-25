@@ -72,6 +72,8 @@ High saturation can lead to performance degradation and increased latency, makin
 
 Together, these signals provide a comprehensive view of system health, allowing for proactive issue detection and resolution.
 
+![Latency Traffic Errors]()
+
 **Note**: In our project, we focus on monitoring Nginx logs rather than business logic logs. We aim to collect valuable 
 data on latency, traffic, and errors from Nginx logs while filtering out irrelevant information.
 
