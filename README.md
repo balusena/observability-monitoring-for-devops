@@ -4,11 +4,12 @@
        - **Why Monitoring**
        - **why Observability**
     - **Does Observability Cover Monitoring?**
-    - ** What Can Be Monitored?**
+    - **What Can Be Monitored?**
     - **What Can Be Observed?**
     - **Monitoring on Bare-Metal Servers vs. Monitoring Kubernetes**
-    - ** What are the Tools Available?**
+    - **What are the Tools Available?**
     
 2. **Introduction to Monitoring Tools**
+    - 
     
 
