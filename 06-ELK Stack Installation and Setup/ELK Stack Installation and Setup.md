@@ -122,6 +122,27 @@ ubuntu@balasenapathi:~$ sudo systemctl start kibana
 http://localhost:5601
 ```
 
+### 6. Configure Elasticsearch and Kibana
+You may need to edit the configuration files for Elasticsearch and Kibana to allow external access.
+
+- **1. Edit the Elasticsearch configuration file.**
+```
+ubuntu@balasenapathi:~$ sudo nano /etc/elasticsearch/elasticsearch.yml
+```
+
+- **2. Uncomment and modify the following lines.**
+```
+server.host: "0.0.0.0"
+elasticsearch.hosts: ["http://localhost:9200"]
+```
+
+- **Restart both services.**
+```
+ubuntu@balasenapathi:~$ sudo systemctl restart elasticsearch
+
+ubuntu@balasenapathi:~$ sudo systemctl restart kibana
+```
+
 
 
 
