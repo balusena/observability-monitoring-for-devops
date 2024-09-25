@@ -4,6 +4,8 @@
 The **ELK Stack** is a collection of three powerful open-source tools used for searching, analyzing, and visualizing 
 large amounts of log data in real-time. The name "ELK" comes from the initial letters of its three components:
 
+![ELK Stack](https://github.com/balusena/observability-monitoring-for-devops/blob/main/06-ELK%20Stack%20Installation%20and%20Setup/elk.png)
+
 ### 1. Elasticsearch
 - A distributed, full-text search and analytics engine.
 - It is used to store, search, and analyze large volumes of data quickly.
