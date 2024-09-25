@@ -23,7 +23,7 @@ Prometheus, and provides powerful visualization and alerting capabilities.
    - **3000** ---> Grafana
    - **9100** ---> Node Exporter
    
-### Grafana  installation steps:
+### Grafana installation steps:
 
 Certainly! Here are the installation steps for Grafana on Ubuntu 20.04 without creating a dedicated user:
 
