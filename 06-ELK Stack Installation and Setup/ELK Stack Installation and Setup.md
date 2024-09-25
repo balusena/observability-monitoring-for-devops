@@ -50,7 +50,7 @@ ELK Stack requires Java (version 11+)
 ```
 ubuntu@balasenapathi:~$ sudo apt install openjdk-11-jdk
 ```
-- 2.Verify the installation.
+- **2. Verify the installation.**
 ```
 ubuntu@balasenapathi:~$ java -version
 ```
@@ -58,31 +58,31 @@ ubuntu@balasenapathi:~$ java -version
 ### 3. Install Elasticsearch
 Elasticsearch is the storage and search engine for the ELK stack. Follow these steps to install it.
 
-- 1.Download and install the Elasticsearch public signing key.
+- **1. Download and install the Elasticsearch public signing key.**
 ```
 ubuntu@balasenapathi:~$ wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
 ```
 
-- 2.Add the Elasticsearch repository to the APT sources list
+- **2. Add the Elasticsearch repository to the APT sources list.**
 ```
 ubuntu@balasenapathi:~$ sudo sh -c 'echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" > /etc/apt/sources.list.d/elastic-7.x.list'
 ```
 
-- 3.Install Elasticsearch.
+- **3. Install Elasticsearch.**
 ```
 ubuntu@balasenapathi:~$ sudo apt update
 
 ubuntu@balasenapathi:~$ sudo apt install elasticsearch
 ```
 
-- 4.Enable and start the Elasticsearch service.
+- **4. Enable and start the Elasticsearch service.**
 ```
 ubuntu@balasenapathi:~$ sudo systemctl enable elasticsearch
 
 ubuntu@balasenapathi:~$ sudo systemctl start elasticsearch
 ```
 
-- 5.Verify that Elasticsearch is running.
+- **5. Verify that Elasticsearch is running.**
 ```
 ubuntu@balasenapathi:~$ curl -X GET "localhost:9200/"
 ```
