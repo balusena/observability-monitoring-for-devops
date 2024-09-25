@@ -22,8 +22,7 @@ essential tool for teams aiming to improve reliability and maintain system healt
    - **Drawbacks**: Lacks real-time insights, proactive monitoring, and deep visibility into application health. It 
    struggles with dynamic, cloud-native environments.
 
-![NewRelic Legacy Monitoring](https://github.com/balusena/observability-monitoring-for-devops/blob/main/07-New%20Relic%20Installation%20and%20Setup/newrelic-legacy-monitoring)   
-
+![NewRelic Legacy Monitoring](https://github.com/balusena/observability-monitoring-for-devops/blob/main/07-New%20Relic%20Installation%20and%20Setup/newrelic-legacy-monitoring.png)
 ### 2. **New Relic Monitoring**
    - **Approach**: Provides full-stack observability, covering applications, infrastructure, and user experience in 
    real-time.
