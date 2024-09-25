@@ -103,7 +103,7 @@ For instance, Kubernetes' service discovery enables Prometheus to monitor pods a
 selectors, ensuring that infrastructure changes like scaling or reconfiguration are automatically accounted for in the
 monitoring setup.
 
-![Prometheus]()
+![Prometheus](https://github.com/balusena/observability-monitoring-for-devops/blob/main/08-Observability%20Monitoring%20AWS%20DevOps%20Project/prometheus.png)
 
 Implementing service discovery ensures that all relevant targets are consistently monitored, enhancing scalability, 
 reliability, and operational efficiency. This automation simplifies management and supports proactive monitoring, 
