@@ -19,5 +19,8 @@
           - **Alert Manager**
           - **Exporters**
           - **Prometheus Web UI**
-         
+       - **Grafana**
+          - **Key features**
+       - **API Clients**
+       - **Prometheus and Grafana Together**     
 
