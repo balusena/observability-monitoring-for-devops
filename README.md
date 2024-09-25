@@ -22,5 +22,19 @@
        - **Grafana**
           - **Key features**
        - **API Clients**
-       - **Prometheus and Grafana Together**     
+       - **Prometheus and Grafana Together**  
+       
+3. **Prometheus Installation and Setup**
+    - **Prometheus**
+    - **Key Features**
+    - **Prometheus installation and setup in Ubuntu Linux**
+       - **Prerequisites**
+       - **Prometheus installation steps**
+          - **Update System Packages**
+          - **Download Prometheus from https://prometheus.io/download/**
+          - **Extract the Downloaded Archive**
+          - **Move into the Extracted Directory**
+          - **Start Prometheus**
+          - **Create the systemd Unit File**
+                    
 
