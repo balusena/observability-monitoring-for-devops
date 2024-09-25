@@ -146,6 +146,8 @@ ubuntu@balasenapathi:~$ sudo systemctl restart kibana
 ### 7. Install Beats 
 - **Filebeat**
 
+![Beats](https://github.com/balusena/observability-monitoring-for-devops/blob/main/06-ELK%20Stack%20Installation%20and%20Setup/beats.png)
+
 Filebeat is a lightweight, open-source log shipper designed for forwarding and centralizing log data. It is part of the 
 Elastic Stack and operates on the edge of your infrastructure, collecting logs from various sources such as servers and 
 applications. Filebeat efficiently sends this log data to either Logstash for further processing or directly to Elasticsearch
