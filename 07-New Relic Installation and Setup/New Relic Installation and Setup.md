@@ -2,7 +2,7 @@
 
 ## New Relic Overview
 
-![NewRelic]()
+![NewRelic](https://github.com/balusena/observability-monitoring-for-devops/blob/main/07-New%20Relic%20Installation%20and%20Setup/newrelic.png)
 
 New Relic is a powerful observability platform designed to monitor the performance of applications and infrastructure in
 real-time. It provides a suite of tools that enable developers and operations teams to gain insights into their systems 
@@ -22,7 +22,7 @@ essential tool for teams aiming to improve reliability and maintain system healt
    - **Drawbacks**: Lacks real-time insights, proactive monitoring, and deep visibility into application health. It 
    struggles with dynamic, cloud-native environments.
 
-![NewRelic Legacy Monitoring]()   
+![NewRelic Legacy Monitoring](https://github.com/balusena/observability-monitoring-for-devops/blob/main/07-New%20Relic%20Installation%20and%20Setup/newrelic-legacy-monitoring)   
 
 ### 2. **New Relic Monitoring**
    - **Approach**: Provides full-stack observability, covering applications, infrastructure, and user experience in 
@@ -35,7 +35,7 @@ essential tool for teams aiming to improve reliability and maintain system healt
    - **Advantages**: Offers detailed insights into application performance, proactive monitoring, and visualization, 
    making it ideal for modern, complex infrastructures.
 
-![NewRelic Monitoring]()
+![NewRelic Monitoring](https://github.com/balusena/observability-monitoring-for-devops/blob/main/07-New%20Relic%20Installation%20and%20Setup/newrelic-monitoring.png)
 
 
 
