@@ -96,6 +96,24 @@ ubuntu@balasenapathi:~$ sudo systemctl enable newrelic-infra
 If you are using specific programming languages, you may want to install language agents (e.g., for Node.js, Python, Java).
 Follow the New Relic documentation for instructions based on the programming language you are using.
 
+- **1. To Install the New Relic Java Agent.**
+Download the New Relic Java Agent
+
+Go to the New Relic Java agent download page or use the following command to download the agent directly on your Ubuntu 
+server.
+```
+ubuntu@balasenapathi:~$ wget https://download.newrelic.com/newrelic/java-agent/newrelic-agent/current/newrelic-java.zip
+
+ubuntu@balasenapathi:~$ curl -O https://download.newrelic.com/newrelic/java-agent/newrelic-agent/current/newrelic-java.zip
+```
+**Note:** Use any of these commands to download the New Relic Java Agent, but "curl -O" has more flexibility over "wget".
+
+- **2.Unzip the downloaded file.**
+```
+ubuntu@balasenapathi:~$ unzip newrelic-java.zip -d /path/to/your/app
+```
+**Note:* This will extract the newrelic/ folder into your application directory.
+
 ### 6. Verify the Installation
 Log in to your New Relic account and navigate to the Infrastructure tab to verify that your server is reporting data.
 
@@ -103,6 +121,7 @@ Log in to your New Relic account and navigate to the Infrastructure tab to verif
 Setting up New Relic on Ubuntu is straightforward. Once installed and configured, you can monitor your applications, 
 servers, and infrastructure in real time, gaining insights into performance and identifying potential issues.For further
 customization and features, refer to the New Relic documentation for detailed instructions.
+
 
 
 
