@@ -72,7 +72,7 @@ High saturation can lead to performance degradation and increased latency, makin
 
 Together, these signals provide a comprehensive view of system health, allowing for proactive issue detection and resolution.
 
-![Latency Traffic Errors]()
+![Latency Traffic Errors](https://github.com/balusena/observability-monitoring-for-devops/blob/main/08-Observability%20Monitoring%20AWS%20DevOps%20Project/latency-traffic-errors.png)
 
 **Note**: In our project, we focus on monitoring Nginx logs rather than business logic logs. We aim to collect valuable 
 data on latency, traffic, and errors from Nginx logs while filtering out irrelevant information.
