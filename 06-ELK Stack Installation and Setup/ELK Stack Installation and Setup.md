@@ -87,6 +87,41 @@ ubuntu@balasenapathi:~$ sudo systemctl start elasticsearch
 ubuntu@balasenapathi:~$ curl -X GET "localhost:9200/"
 ```
 
+### 4. Install Logstash
+Logstash is used to collect, process, and forward logs and data.
+
+- **1. Install Logstash using APT.**
+```
+ubuntu@balasenapathi:~$ sudo apt install logstash
+```
+
+- **2. Start and enable the Logstash service.**
+```
+ubuntu@balasenapathi:~$ sudo systemctl enable logstash
+
+ubuntu@balasenapathi:~$ sudo systemctl start logstash
+```
+
+### 5. Install Kibana
+Kibana provides the web interface for visualization of logs and metrics stored in Elasticsearch.
+
+- **1. Install Kibana.**
+```
+ubuntu@balasenapathi:~$ sudo apt install kibana
+```
+
+- **2. Enable and start the Kibana service.**
+```
+ubuntu@balasenapathi:~$ sudo systemctl enable kibana
+
+ubuntu@balasenapathi:~$ sudo systemctl start kibana
+```
+
+- **3. To access Kibana, open your web browser and navigate to.**
+```
+http://localhost:5601
+```
+
 
 
 
