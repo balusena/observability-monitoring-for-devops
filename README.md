@@ -8,7 +8,7 @@
     - **What Can Be Observed?**
     - **Monitoring on Bare-Metal Servers vs. Monitoring Kubernetes**
     - **What are the Tools Available?**
-    
+
 2. **Introduction to Monitoring Tools**
     - **Monitoring Tools Overview**
        - **Prometheus**
@@ -109,5 +109,41 @@
           - **To Install the New Relic Java Agent. Download the New Relic Java Agent**
           - **2.Unzip the downloaded file**
        - **Verify the Installation** 
-       - **Conclusion**   
-              
+       - **Conclusion**  
+       
+8. **Observability Monitoring AWS DevOps Project**
+    - **AWS DevOps Project**
+       - **frontend**
+       - **catalgoue**
+       - **user**
+       - **cart**
+       - **payment**
+       - **shipping**
+       - **dispatch**
+       - **tf-module-documentdb**
+       - **tf-module-elasticache**
+       - **tf-module-rds**
+       - **tf-module-rabbitmq**
+       - **tf-module-vpc**
+       - **tf-module-alb**
+       - **tf-module-app**
+       - **tf-module-eks**
+       - **aws-parameter-store**
+       - **aws-parameter-init-container**
+       - **schema-load-init-container**
+       - **roboshop-ansible**
+       - **roboshop-terraform**
+       - **roboshop-jenkins**
+       - **roboshop-kubernetes**         
+    - **Observability and Monitoring AWS DevOps Project**
+       - **Project Approach Using ELK Stack for Log Collection and Management**
+       - **Four Golden Signals from Google's Site Reliability Engineering (SRE)**
+          - **Latency**
+          - **Traffic**
+          - **Errors**
+          - **Saturation**
+       - **Project Approach Using Prometheus and ELK Integration**
+          - **Service Discovery**
+       - **Project Approach Using Grafana**
+       - **Project Approach Using New Relic**
+    - **Conclusion**        
