@@ -1,4 +1,27 @@
 # Observability and Monitoring for DevOps
+
+![Observability and Monitoring for DevOps](https://github.com/balusena/observability-monitoring-for-devops/blob/main/observability-monitoring.png)
+
+The **AWS DevOps Project** repository is a comprehensive solution aimed at deploying, managing, and monitoring the 
+**RoboShop application** within a cloud-native environment. This project features multiple microservices, including 
+**frontend, catalogue, user, cart, payment, shipping, and dispatch**, each responsible for critical aspects of the 
+application. 
+
+To ensure robust infrastructure management, the repository incorporates various **Terraform modules**, such as 
+**tf-module-documentdb, tf-module-elasticache, tf-module-rds, and tf-module-rabbitmq**, enabling the automated setup 
+of essential AWS services like **DocumentDB, ElastiCache, RDS**, and **RabbitMQ**. Networking is handled through 
+**tf-module-vpc** and **tf-module-alb**, providing secure communication and effective load balancing.
+
+The project also integrates automation tools, including **roboshop-ansible** for OS-level configurations, **roboshop-jenkins**
+for continuous integration and delivery, and **roboshop-kubernetes** for orchestrating containerized applications on **AWS EKS**. 
+
+Observability and monitoring are managed through tools like the **ELK Stack (Elasticsearch, Logstash, Kibana)**, **Prometheus**,
+**Grafana**, and **New Relic** for application performance monitoring (APM), ensuring real-time logging, metrics, and alerts. 
+
+This repository serves as a full-fledged DevOps pipeline, enabling teams to deploy, monitor, and scale the **RoboShop application**
+efficiently, with an emphasis on operational resilience and optimized performance in a cloud environment.
+
+
 1. **Introduction to Observability and Monitoring**
     - **Introduction to Observability**
        - **Why Monitoring**
