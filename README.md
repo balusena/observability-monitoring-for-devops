@@ -49,5 +49,44 @@
           - **Install Grafana**
           - **Start the Grafana service**
           - **Verify Status, Enable and Start the Grafana service to start on boot**
-          - **Grafana Login Credentials**               
-
+          - **Grafana Login Credentials** 
+          
+5. **Introduction to Observability Tools**
+    - **Observability Tools Overview**
+    
+6. **ELK Stack Installation and Setup**
+    - **What is the ELK Stack?**
+       - **Elasticsearch**
+       - **Logstash**
+       - **Kibana**
+       - **Common Use Cases**
+    - **ELK installation and setup in Ubuntu Linux**
+       - **Update the System**
+       - **Install Java**
+          - **Install OpenJDK using the following command**
+          - **Verify the installation**
+       - **Install Elasticsearch**
+          - **Download and install the Elasticsearch public signing key**
+          - **Add the Elasticsearch repository to the APT sources list**
+          - **Install Elasticsearch**
+          - **Enable and start the Elasticsearch service**
+          - **Verify that Elasticsearch is running**
+       - **Install Logstash**
+          - **Install Logstash using APT**   
+          - **Start and enable the Logstash service**                      
+       - **Install Kibana**
+          - **Install Kibana**
+          - **Enable and start the Kibana service**
+          - **To access Kibana, open your web browser and navigate to**
+       - **Configure Elasticsearch and Kibana**
+          - **Edit the Elasticsearch configuration file**
+          - **Uncomment and modify the following lines**
+          - **Restart both services**
+       - **Install Beats**
+          - **Filebeat**
+             - **Install Filebeat**
+             - **Enable and configure the Filebeat Elasticsearch module**
+             - **Start Filebeat**
+       - **Verify Installation**
+       - **Access Kibana**
+       - **Summary**   
