@@ -89,4 +89,25 @@
              - **Start Filebeat**
        - **Verify Installation**
        - **Access Kibana**
-       - **Summary**   
+       - **Summary**
+       
+7. **New Relic Installation and Setup**
+    - **New Relic Overview**
+    - **Legacy Monitoring vs. New Relic Monitoring**
+       - **Legacy Monitoring**
+       - **New Relic Monitoring**
+    - **New Relic installation and setup in Ubuntu Linux**
+       - **Create a New Relic Account**
+       - **Install the New Relic Infrastructure Agent**
+          - **Add the New Relic APT Repository Open your terminal and run the following commands**   
+          - **Update and Install the Agent**
+       - **Configure the New Relic Infrastructure Agent**
+          - **Open the configuration file**
+          - **Add your New Relic license key to the configuration**
+       - **Start and Enable the New Relic Infrastructure Agent**
+       - **Install Language-Specific Agents**
+          - **To Install the New Relic Java Agent. Download the New Relic Java Agent**
+          - **2.Unzip the downloaded file**
+       - **Verify the Installation** 
+       - **Conclusion**   
+              
